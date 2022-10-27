@@ -13,13 +13,12 @@ const arrGroceryList = [
 ];
 
 const eleGroceryList = document.querySelector ('.grocery-list');
-
-eleListItem = document.createElement ('li');
-
+let eleListItem = document.createElement("li");
+eleListItem.classList.add("list-item");
 
 let i = 0;
 while (arrGroceryList[i]) {
-    eleListItem += arrGroceryList[i];
+    eleListItem.append(arrGroceryList[i]);
     i++;
 }
-eleGroceryList.innerHTML = eleListItem;
+eleGroceryList.append(eleListItem);
