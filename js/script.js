@@ -13,7 +13,12 @@ const arrGroceryList = [
 ];
 
 const eleGroceryList = document.querySelector ('.grocery-list');
+console.log(eleGroceryList)
 
-for (let i = 0; i < arrGroceryList.length; i++) {
-	eleGroceryList.innerHTML += `<li>${arrGroceryList[i]}</li>`;
+let i = 0;
+while (i < arrGroceryList.length) {
+    
+    i++
 }
+
+eleGroceryList.innerHTML += `<li>${arrGroceryList[i]}</li>`;
