@@ -4,21 +4,23 @@
 // Consigli:
 // Come posso ciclare su un array con il ciclo while?
 
-const arrGroceryList = [
+const arrShoppingList = [
+    'Antipasti',
     'Pasta',
     'Carne',
     'Pesce',
     'Verdura',
     'Frutta',
+    'Dolce',
 ];
 
-const eleGroceryList = document.querySelector ('.grocery-list');
-let eleListItem = document.createElement("li");
-eleListItem.classList.add("list-item");
+const eleShoppingList = document.querySelector ('.shopping-list');
 
 let i = 0;
-while (arrGroceryList[i]) {
-    eleListItem.append(arrGroceryList[i]);
+while (i < arrShoppingList.length) {
+    const eleListItem = document.createElement("li");
+    eleListItem.classList.add("list-item");
+    eleListItem.append(arrShoppingList[i]);
+    eleShoppingList.append(eleListItem);
     i++;
 }
-eleGroceryList.append(eleListItem);
